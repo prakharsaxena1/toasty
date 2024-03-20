@@ -22,11 +22,11 @@ export interface IToasty {
    */
   showCloseButton?: boolean;
   /*
-   * Selected statuses "information" | "warning" | "error" | "success"
+   * Selected statuses "information", "warning", "error", "success"
    */
   status?: ToastStatus;
   /*
-   * Selected type "default" | "notification"
+   * Selected type "default" or "notification"
    */
   type?: ToastType;
   /*
@@ -42,7 +42,7 @@ export interface IToasty {
    */
   message: string;
   /*
-   * Swap icon
+   * Swap icons: 'Airplay', 'Video', 'Phone', 'Question'
    */
   swapIcon?: 'Airplay' | 'Video' | 'Phone' | 'Question';
 }

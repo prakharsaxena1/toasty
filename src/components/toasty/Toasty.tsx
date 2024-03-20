@@ -61,9 +61,9 @@ export const Toasty: React.FC<IToasty> = ({
           </button>
         )}
         {showCloseButton && (
-          <span className="p-1 hover:bg-slate-500 rounded-full cursor-pointer transition-all">
+          <button className="p-1 hover:bg-slate-500 rounded-full cursor-pointer transition-all" onClick={() => {console.log('close')}} type="button">
             <X size={24} />
-          </span>
+          </button>
         )}
       </div>
     </div>

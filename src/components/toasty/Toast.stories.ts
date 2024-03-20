@@ -43,7 +43,7 @@ export const Secondary: Story = {
 
 export const Tertiary: Story = {
   args: {
-    message: 'Primary toast',
+    message: 'Tertiary toast',
     status: 'error',
     type: 'notification',
     showIcon: true,
