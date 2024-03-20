@@ -1,3 +1,1 @@
-import Toasty from './Toasty';
-
-export default Toasty;
+export { default as Toasty } from './Toasty';
