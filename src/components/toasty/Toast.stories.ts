@@ -8,6 +8,18 @@ const meta = {
   component: Toasty,
   parameters: { layout: 'centered' },
   tags: ['autodocs'],
+  argTypes: {
+    showIcon: { control: 'boolean' },
+    showDivider: { control: 'boolean' },
+    showActionButton: { control: 'boolean' },
+    showCloseButton: { control: 'boolean' },
+    status: { control: { type: 'select', options: ['information', 'warning', 'error', 'success'] } },
+    type: { control: { type: 'select', options: ['default', 'notification'] } },
+    onClickAction: { action: 'clicked' },
+    actionButtonLabel: { control: 'text' },
+    message: { control: 'text' },
+    swapIcon: { control: { type: 'select', options: ['Airplay', 'Video', 'Phone', 'Question'] } },
+  },
   args: { onClickAction: fn() },
 } satisfies Meta<typeof Toasty>;
 

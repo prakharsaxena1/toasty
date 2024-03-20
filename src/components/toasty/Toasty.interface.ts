@@ -1,11 +1,9 @@
-// Types of statuses
 export type ToastStatus = "information" | "warning" | "error" | "success";
 
-// Types of Toasts
 export type ToastType = "default" | "notification";
 
-export interface IToasty {
-  /*
+export interface IToastyProps {
+  /**
    * Show icon
    */
   showIcon?: boolean;

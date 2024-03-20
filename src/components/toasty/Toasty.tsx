@@ -10,7 +10,7 @@ import {
   Phone,
   Question,
 } from "@phosphor-icons/react";
-import { IToasty, ToastStatus } from "./Toasty.interface";
+import { IToastyProps, ToastStatus } from "./Toasty.interface";
 
 const dividerStyles = "border-l-2 border-gray-500";
 const ICON_SIZE = 24;
@@ -29,7 +29,7 @@ const statusIcon: Record<ToastStatus, React.ReactNode> = {
   success: <CheckCircle size={ICON_SIZE} color="#00A151" weight="fill" />,
 };
 
-export const Toasty: React.FC<IToasty> = ({
+export const Toasty: React.FC<IToastyProps> = ({
   message,
   status = "information",
   type = "default",
